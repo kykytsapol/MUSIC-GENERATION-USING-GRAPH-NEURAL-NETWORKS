@@ -98,7 +98,7 @@ class PolyphemusTrainer():
 
         # Losses (ignoring PAD tokens)
         self.bce_unreduced = nn.BCEWithLogitsLoss(reduction='none')
-        self.ce_p = nn.CrossEntropyLoss(ignore_index=PitchToken.PAD.value)
+        self.ce_p = nn.CrossEntropyLoss(ignore_index=PitchToken.PAD_M.value)
         self.ce_d = nn.CrossEntropyLoss(ignore_index=DurationToken.PAD.value)
 
         # Training stats
