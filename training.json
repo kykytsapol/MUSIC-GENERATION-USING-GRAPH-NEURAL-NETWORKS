@@ -3,7 +3,7 @@
     "model": {
         "dropout": 0,
         "batch_norm": true,
-        "gnn_n_layers": 10,
+        "gnn_n_layers": 8,
         "d": 512,
         "n_bars": 2,
         "resolution": 8
@@ -19,13 +19,13 @@
     "lr_scheduler": {
         "peak_lr": 0.0001,
         "final_lr_scale": 0.01,
-        "warmup_steps": 8000,
-        "decay_steps": 800000
+        "warmup_steps": 295,
+        "decay_steps": 2800
     },
     "beta_scheduler": {
-        "anneal_start": 40000,
+        "anneal_start": 1000,
         "beta_max": 0.01,
-        "step_size": 0.001,
-        "anneal_end": 500000
+        "step_size": 0.0001,
+        "anneal_end": 5000
     }
 }
